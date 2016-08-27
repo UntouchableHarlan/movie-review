@@ -12,6 +12,5 @@ class Movie < ApplicationRecord
                       director: new_lookup[:movie].director)
 
     movie
-  end
-
+  end 
 end
