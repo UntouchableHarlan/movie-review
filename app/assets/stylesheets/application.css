@@ -13,3 +13,16 @@
  *= require_tree .
  *= require_self
  */
+
+ @import "materialize";
+
+ body {
+   background-image: url("movieist");
+   background-size: cover;
+ }
+
+h1 {
+  font-family: 'Righteous', cursive;
+  font-size: 6em;
+  color: #6a1b9a;
+}
