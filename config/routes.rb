@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  get 'sessions/new'
+
+  root 'welcome#home'
+
+  get '/login' => 'sessions#new'
 
   get '/signup' => 'users#new'
   resources :users
