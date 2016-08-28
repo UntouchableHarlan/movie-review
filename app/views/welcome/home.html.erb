@@ -1,9 +1,12 @@
-<center><h1>Movieist</h1></center>
-
-<% if current_user %>
+<div class="container">
+<center><div class="start">
+  <h1>Movieist</h1>
+  <p>Life's too short to watch bad movies.</p>
+  <p><% if current_user %>
   Welcome <%= current_user.name %>
   <%= link_to "Logout", login_path %>
-<% else %>
-  <%= link_to "Login", login_path %>
-  <%= link_to "Signup", signup_path %>
-<% end %>
+  <% else %>
+  <%= link_to "Login", login_path %> | <%= link_to "Signup", signup_path %>
+  <% end %></p>
+</div></center>
+</div>
